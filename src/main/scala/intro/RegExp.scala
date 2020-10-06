@@ -1,3 +1,5 @@
+package main.scala.intro
+
 import scala.io.StdIn
 
 object RegExp {

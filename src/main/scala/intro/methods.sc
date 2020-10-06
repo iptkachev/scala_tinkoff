@@ -25,4 +25,4 @@ def isCapital(word: String, pos: Int): Boolean = {
 
 isCapital("ScalA ", 0)
 
-"A".toInt
+

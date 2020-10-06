@@ -1,5 +1,6 @@
-import scala.io.StdIn
+package main.scala.intro
 
+import scala.io.StdIn
 
 object Main {
   def main(args: Array[String]) {
