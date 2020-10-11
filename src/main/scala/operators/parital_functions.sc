@@ -10,6 +10,7 @@ val isEven: PartialFunction[Int, String] = {
 val test1 = List(1.0,4,-10, 0)
 println(test1 collect log)
 
+Seq(test1) foreach { println }
 // 2
 case class Jar(name: String, value: Int, price: Double)
 
@@ -25,3 +26,19 @@ val test2 = List(
 )
 
 println(test2 collect discount)
+
+import scala.collection.mutable
+def check: PartialFunction[Option[Int], Int] = {
+  case x if x.isDefined => x.get
+}
+
+def flatten(options: List[Option[Int]]): List[Int] = {
+  options.collect(check)
+}
+
+def flatten2(options: List[Option[Int]]): List[Int] =
+  options.collect {
+    case Some(x) => x
+  }
+
+flatten(List(None, Option(2)))
