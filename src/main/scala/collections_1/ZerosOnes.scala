@@ -1,4 +1,4 @@
-package main.scala.collections
+package main.scala.collections_1
 
 object ZerosOnes {
   @scala.annotation.tailrec

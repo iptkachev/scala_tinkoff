@@ -18,3 +18,5 @@ def foo2(list: List[Int]): Int = {
 
 println(foo2(l))
 println(foo(l))
+
+println((List(1,24) ++ List(56,8)).slice(0,2))
